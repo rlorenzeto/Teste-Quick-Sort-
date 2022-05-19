@@ -55,7 +55,7 @@ int main()
 {
 	int vet[100000];
 	int tam_vet = sizeof(vet) / sizeof(int);
-	int i , j;
+	int i;
 	
 	srand(time(NULL));
 	
