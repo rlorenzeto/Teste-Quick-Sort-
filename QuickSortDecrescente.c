@@ -60,7 +60,7 @@ int main()
 	srand(time(NULL));
 	
     	for(i=tam_vet; i>0; i--){
-        vet[j] = i;
+        vet[i] = i;
    	}
     
 	quick_sort(vet, 0, tam_vet - 1);
