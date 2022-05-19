@@ -56,17 +56,20 @@ int main()
 	int vet[100000];
 	int tam_vet = sizeof(vet) / sizeof(int);
 	int i;
+	int j = 0;
 	
 	srand(time(NULL));
-	
-    	for(i=tam_vet-1; i>=0; i--){
-        	vet[i] = i;
+    
+    for(i=tam_vet-1; i>0; i--){
+        vet[j] = i;
+        j++;
    	}
+   	
+   	for(i = 0; i < tam_vet; i++){
+		printf("%d ", vet[i]);
+    }
     
 	quick_sort(vet, 0, tam_vet - 1);
 
-	for(i = 0; i < tam_vet; i++)
-		printf("%d ", vet[i]);
-	
 	return 0; 
 }
