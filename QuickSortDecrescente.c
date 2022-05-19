@@ -59,7 +59,7 @@ int main()
 	
 	srand(time(NULL));
 	
-    	for(i=tam_vet; i>=0; i--){
+    	for(i=tam_vet-1; i>=0; i--){
         	vet[i] = i;
    	}
     
