@@ -55,12 +55,13 @@ int main()
 {
 	int vet[100000];
 	int tam_vet = sizeof(vet) / sizeof(int);
-	int i;
+	int i , j;
 	
 	srand(time(NULL));
-    for(i=tam_vet; i>0; i--){
-        vet[i-1] = i;
-    }
+	
+    	for(i=tam_vet; i>0; i--){
+        vet[j] = i;
+   	}
     
 	quick_sort(vet, 0, tam_vet - 1);
 
